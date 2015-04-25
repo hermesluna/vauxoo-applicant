@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS `employee` (
   `id` int(10) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `Last_Name` varchar(80) NOT NULL,
+  `jefe` varchar(30) NOT NULL,
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -27,11 +28,11 @@ CREATE TABLE IF NOT EXISTS `employee` (
 -- Volcar la base de datos para la tabla `employee`
 --
 
-INSERT INTO `employee` (`id`, `first_name`, `Last_Name`) VALUES
-(1, 'daniel', 'romero'),
-(2, 'carlos', 'rangel'),
-(3, 'francisco ', 'Linares'),
-(4, 'hermes', 'luna');
+INSERT INTO `employee` (`id`, `first_name`, `Last_Name`, `jefe`) VALUES
+(1, 'daniel', 'romero', 'carlos'),
+(2, 'carlos', 'rangel', 'hermes'),
+(3, 'francisco ', 'Linares', 'daniel'),
+(4, 'hermes', 'luna', 'francisco');
 
 -- --------------------------------------------------------
 
