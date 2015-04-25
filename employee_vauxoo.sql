@@ -58,6 +58,30 @@ INSERT INTO `employee_departament` (`id`, `name`, `description`) VALUES
 (NULL, 'centro de computo', 'area para alumnos de ISC'),
 (NULL, 'centro de informacion', 'biblioteca ');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `employee_hobby`
+--
+
+CREATE TABLE IF NOT EXISTS `employee_hobby` (
+  `id` int(10) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `description` varchar(70) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcar la base de datos para la tabla `employee_hobby`
+--
+
+INSERT INTO `employee_hobby` (`id`, `name`, `description`) VALUES
+(1, 'ver futbol por TV', 'liga MX '),
+(2, 'jugar vídeo juegos ', 'pes 2015'),
+(3, 'ver futbol por TV', 'liga MX '),
+(1, 'jugar vídeo juegos ', 'pes 2015'),
+(2, 'ir al cine', 'ver películas de estreno'),
+(3, 'ir al cine', 'ver películas de estreno');
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
